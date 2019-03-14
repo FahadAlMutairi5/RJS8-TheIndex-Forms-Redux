@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 // Components
 import BookTable from "./BookTable";
+import AddBookModal from "./AddBookModal";
 import Loading from "./Loading";
 
 import { connect } from "react-redux";
@@ -30,6 +31,7 @@ class AuthorDetail extends Component {
             />
           </div>
           <BookTable books={author.books} />
+          <AddBookModal />
         </div>
       );
     }
